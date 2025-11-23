@@ -100,4 +100,3 @@ Currently, the site uses gradient placeholders for images. To add real images:
 ## License
 
 This is a replica project for demonstration purposes.
-
