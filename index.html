@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kalyāna Wellness Retreat - Experience nature, wellness, and culture through our curated retreats in beautiful destinations.">
+    <meta name="keywords" content="retreat, wellness, nature, culture, travel, India, Mount Abu, Bera Jawai">
+    <meta name="author" content="Kalyāna Wellness Retreat">
+    <meta property="og:title" content="Kalyāna Wellness Retreat - Nature + Wellness + Culture">
+    <meta property="og:description" content="Experience nature, wellness, and culture through our curated retreats.">
+    <meta property="og:type" content="website">
+    <title>Kalyāna Wellness Retreat - Nature + Wellness + Culture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="images/mountAbuImages/SFS_1224_01-ezgif.com-jpg-to-webp-converter.webp" fetchpriority="high">
+</head>
+<body>
+    <!-- Skip to content link -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="Kalyāna Wellness Retreat Logo">
+                        <span>Kalyāna Wellness Retreat</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu" role="list">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="retreats.html" class="nav-link">Retreats</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="dropdown">
+                        <a href="about.html" class="nav-link" aria-expanded="false" aria-haspopup="true">About <span class="dropdown-arrow" aria-hidden="true">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html#why-kalyana">Why Kalyāna</a></li>
+                            <li><a href="about.html#mission">Our Mission</a></li>
+                            <li><a href="about.html#values">Our Core Values</a></li>
+                            <li><a href="about.html#story">The Heart Behind Kalyāna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-search">
+                    <label for="retreat-search" class="sr-only">Search retreats</label>
+                    <input type="search" id="retreat-search" placeholder="Search retreats..." aria-label="Search retreats by name, location, or type" class="search-input">
+                    <button type="button" class="search-button" aria-label="Clear search">
+                        <span aria-hidden="true">✕</span>
+                    </button>
+                </div>
+            
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Nature + Wellness + Culture</h1>
+                <div class="hero-cta">
+                    <a href="#retreats-section" class="btn btn-primary">Explore Retreats</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Retreats -->
+        <section class="retreats-section" id="retreats-section">
+            <div class="container">
+                <h2 class="section-title">upcoming retreats</h2>
+                <p class="section-subdescription">Discover transformative experiences that blend nature, wellness, and cultural immersion in breathtaking destinations.</p>
+                <div class="retreats-grid" id="retreats-grid" role="list">
+                    <article class="retreat-card" data-retreat-name="Mount Abu" data-retreat-location="Mount Abu" data-retreat-type="Spiritual" data-retreat-date="2026-04" data-retreat-url="retreat-detail.html?retreat=mount-abu" role="listitem" tabindex="0">
+                        <div class="retreat-image">
+                            <div class="retreat-placeholder" role="img" aria-label="Mount Abu spiritual retreat destination"></div>
+                        </div>
+                        <div class="retreat-content">
+                            <time class="retreat-date" datetime="2026-04">APR - MAY, MULTIPLE DATES 2026</time>
+                            <h3 class="retreat-title">Mount Abu | Spiritual Retreat</h3>
+                            <a href="retreat-detail.html?retreat=mount-abu" class="retreat-link" aria-label="Learn more about Mount Abu Spiritual Retreat">Learn More</a>
+                        </div>
+                    </article>
+                    <article class="retreat-card" data-retreat-name="Bera Jawai" data-retreat-location="Bera Jawai" data-retreat-type="Wildlife" data-retreat-date="2026-03" data-retreat-url="retreat-detail.html?retreat=bera-jawai" role="listitem" tabindex="0">
+                        <div class="retreat-image">
+                            <div class="retreat-placeholder" role="img" aria-label="Bera Jawai wildlife retreat destination"></div>
+                        </div>
+                        <div class="retreat-content">
+                            <time class="retreat-date" datetime="2026-03">Mar, 2026</time>
+                            <h3 class="retreat-title">Bera Jawai | Wildlife Retreat</h3>
+                            <a href="retreat-detail.html?retreat=bera-jawai" class="retreat-link" aria-label="Learn more about Bera Jawai Wildlife Retreat">Learn More</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="search-results-message" id="search-results-message" role="status" aria-live="polite" aria-atomic="true"></div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="section-subdescription">Hear from travelers who have experienced the transformative power of our retreats.</p>
+                <div class="testimonials-wrapper">
+                    <div class="testimonials-carousel" id="testimonials-carousel">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"The guided hike through Mount Abu's scenic trails was invigorating, but it was the sunset meditation at the cliff's edge that touched my soul. I've never felt so grounded and expansive at once."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Prem</div>
+                                    <div class="testimonial-location">Date: 12/03/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Being surrounded by the mystic beauty of Mount Abu while diving deep into spiritual practices was the reset my mind and soul needed."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Ankit</div>
+                                    <div class="testimonial-location">Date: 12/03/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Every sunrise trek felt like a rebirth, and the meditations helped me reconnect with my inner truth. The experience was beyond words."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Jay Ghelani</div>
+                                    <div class="testimonial-location">Date: 04/02/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"The balance of physical yoga and soulful sound baths was perfect. The facilitators held such sacred space, I felt completely safe to heal and explore."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Shweta</div>
+                                    <div class="testimonial-location">Date: 04/02/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"This retreat was transformative. The sound healing at the waterfall transported me to a space of deep peace I never knew existed. I was truly amazed with the whole experience and left the retreat feeling rejuvenated and at bliss."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Kirti</div>
+                                    <div class="testimonial-location">Date: 14/04/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Meditating as the sun rose over the hills was a surreal experience. I felt connected to nature, spirit, and myself in a completely new way."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Mittal</div>
+                                    <div class="testimonial-location">Date: 04/02/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Each day felt like a sacred ritual—from yoga at dawn to evening meditations. I returned home with a deep sense of inner peace and joy."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Ajay</div>
+                                    <div class="testimonial-location">Date: 12/03/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"The sunrise trek overlooking the Aravallis was breathtaking with the sun gazing session but it was the morning breathwork sessions that truly opened my heart. I left the retreat feeling reborn."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Devesh</div>
+                                    <div class="testimonial-location">Date: 14/04/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"The yoga and meditation amidst Mount Abu's serenity created a profound inner stillness. Visiting the ancient temples added a divine depth to the entire journey. I recommend anyone who is a seeker to join this transformative journey."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Shashvat</div>
+                                    <div class="testimonial-location">Date: 04/02/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"I've been to many retreats, but this one was life-changing. The energy in Mount Abu, combined with conscious breathwork, shifted my entire perspective."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Dhruva</div>
+                                    <div class="testimonial-location">Date: 04/02/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Coming with my wife and two daughters, including our 6-year-old, I wasn't sure how deeply we'd all connect—but the retreat embraced us completely. Watching my children meditate at sunrise and my wife glow after sound healing made this a soul-nourishing family experience we'll treasure forever."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Haresh</div>
+                                    <div class="testimonial-location">Date: 04/02/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"The visit to the ancient yogic caves was incredibly powerful. Sitting in silence where sages once meditated gave me goosebumps—it felt like I touched a timeless stillness within myself."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Smit</div>
+                                    <div class="testimonial-location">Date: 12/03/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"I came for yoga, but the breathwork and spiritual energy of the place shifted something deep within me. I returned home lighter and more present."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Kusharga</div>
+                                    <div class="testimonial-location">Date: 04/02/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"My week at Kalyana was a soul-stirring experience. The yoga and meditation sessions were deeply grounding. Sun gazing at dawn and the mesmerizing star gazing at night connected me to the cosmos."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Divya Menon</div>
+                                    <div class="testimonial-location">Date: May 1, 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Kalyana is a sanctuary for the mind and body. I particularly enjoyed the variety of activities. The yoga and meditation were excellent, catering to all levels. Sun gazing was a unique experience, and star gazing under the clear skies was unforgettable."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Samira Khan</div>
+                                    <div class="testimonial-location">Date: April 29, 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"A truly holistic retreat. The yoga and meditation practices were top-notch. I found the sun gazing and star gazing to be surprisingly profound experiences. The guided sunrise and sunset treks were highlights of my stay."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Thomas Williams</div>
+                                    <div class="testimonial-location">Date: April 26, 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"The retreat was a soulful pause from daily life. The art therapy made me feel like a child again—free, creative, and full of joy."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Damini Patel</div>
+                                    <div class="testimonial-location">Date: 28th–30th October</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Every activity felt so thoughtfully designed and unique. It was the perfect blend for our group's energy and connection."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Heena Patel</div>
+                                    <div class="testimonial-location">Date: 28th–30th October</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"I loved every moment—from yoga and Qigong to the art sessions. The hikes near the water body, with the soothing sounds of nature, were deeply relaxing."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Jyoti Patel</div>
+                                    <div class="testimonial-location">Date: 28th–30th October</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Kalyāna retreat was a space to breathe, reflect, and reconnect with myself. Each session opened something new within me."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Vaishakhi</div>
+                                    <div class="testimonial-location">Date: 28th–30th October</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"The sunrise trek and BreathWork sessions were truly transformative. I felt deeply connected to nature and to my own breath."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Vishal Patel</div>
+                                    <div class="testimonial-location">Date: 3rd–5th October</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Kalyāna Wellness Retreat brought a beautiful balance of movement and stillness. Yog Nidra helped me rest in a way I haven't experienced in years."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Yashpal Parmar</div>
+                                    <div class="testimonial-location">Date: 3rd–5th October</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"The combination of yoga, art therapy, and nature walks opened new layers of peace within me. Every day felt like gentle healing for the soul."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Mudita Patel</div>
+                                    <div class="testimonial-location">Date: 3rd–5th October</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Duplicate cards for seamless loop -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"The guided hike through Mount Abu's scenic trails was invigorating, but it was the sunset meditation at the cliff's edge that touched my soul. I've never felt so grounded and expansive at once."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Prem</div>
+                                    <div class="testimonial-location">Date: 12/03/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Being surrounded by the mystic beauty of Mount Abu while diving deep into spiritual practices was the reset my mind and soul needed."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Ankit</div>
+                                    <div class="testimonial-location">Date: 12/03/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-text">"Every sunrise trek felt like a rebirth, and the meditations helped me reconnect with my inner truth. The experience was beyond words."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-name">Jay Ghelani</div>
+                                    <div class="testimonial-location">Date: 04/02/2025</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <h2 class="section-title">retreat gallery</h2>
+                <p class="section-subdescription">Explore stunning moments from our retreats showcasing the beauty of nature, culture, and transformative experiences.</p>
+                <div class="gallery-grid" id="gallery-grid">
+                    <div class="gallery-item" data-category="accommodation" tabindex="0" role="button" aria-label="View Mount Abu retreat photo 1">
+                        <picture>
+                            <source srcset="images/mountAbuImages/SFS_1224_01-ezgif.com-jpg-to-webp-converter.webp" type="image/webp">
+                            <img src="images/mountAbuImages/SFS_1224_01.jpg" alt="Mount Abu retreat - Mountain view" class="gallery-image" loading="eager" fetchpriority="high" width="600" height="400" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="gallery-item" data-category="accommodation" tabindex="0" role="button" aria-label="View Mount Abu retreat photo 2">
+                        <picture>
+                            <source data-srcset="images/mountAbuImages/SFS_1224_02-ezgif.com-jpg-to-webp-converter.webp" type="image/webp">
+                            <img data-src="images/mountAbuImages/SFS_1224_02.jpg" alt="Mount Abu retreat - Nature view" class="gallery-image" loading="lazy" width="600" height="400" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="gallery-item" data-category="accommodation" tabindex="0" role="button" aria-label="View Mount Abu retreat photo 3">
+                        <picture>
+                            <source data-srcset="images/mountAbuImages/SFS_1224_05-ezgif.com-jpg-to-webp-converter.webp" type="image/webp">
+                            <img data-src="images/mountAbuImages/SFS_1224_05.jpg" alt="Mount Abu retreat - Scenic view" class="gallery-image" loading="lazy" width="600" height="400" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="gallery-item" data-category="accommodation" tabindex="0" role="button" aria-label="View Mount Abu retreat photo 4">
+                        <picture>
+                            <source data-srcset="images/mountAbuImages/SFS_1224_14-ezgif.com-jpg-to-webp-converter.webp" type="image/webp">
+                            <img data-src="images/mountAbuImages/SFS_1224_14.jpg" alt="Mount Abu retreat - Landscape" class="gallery-image" loading="lazy" width="600" height="400" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="gallery-item" data-category="accommodation" tabindex="0" role="button" aria-label="View Mount Abu retreat photo 5">
+                        <picture>
+                            <source data-srcset="images/mountAbuImages/SFS_1224_15-ezgif.com-jpg-to-webp-converter.webp" type="image/webp">
+                            <img data-src="images/mountAbuImages/SFS_1224_15.jpg" alt="Mount Abu retreat - Natural beauty" class="gallery-image" loading="lazy" width="600" height="400" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="gallery-item" data-category="accommodation" tabindex="0" role="button" aria-label="View Mount Abu retreat photo 6">
+                        <picture>
+                            <source data-srcset="images/mountAbuImages/SFS_1224_17-ezgif.com-jpg-to-webp-converter.webp" type="image/webp">
+                            <img data-src="images/mountAbuImages/SFS_1224_17.jpg" alt="Mount Abu retreat - Mountain landscape" class="gallery-image" loading="lazy" width="600" height="400" decoding="async">
+                        </picture>
+                    </div>
+                </div>
+                <div class="gallery-cta">
+                    <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <h2 class="section-title">frequently asked questions</h2>
+                <p class="section-subdescription">Find answers to common questions about Kalyāna Wellness Retreat</p>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                            <span>What is Kalyāna Wellness Retreat?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" aria-hidden="true">
+                            <p>Kalyāna is a nature-led wellness sanctuary where you are invited to slow down, breathe deeply, and reconnect with your inner stillness. We offer holistic experiences that integrate:</p>
+                            <ul>
+                                <li>Meditation</li>
+                                <li>Mindful movement</li>
+                                <li>Breathwork</li>
+                                <li>Nutrition</li>
+                                <li>Nature walks</li>
+                                <li>Healing therapies</li>
+                                <li>Deep rest</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                            <span>What type of retreats do you offer?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" aria-hidden="true">
+                            <p>We offer a wide range of retreat formats, including:</p>
+                            <ul>
+                                <li>Holistic Wellness Retreat</li>
+                                <li>Adventure &amp; Hiking Retreat</li>
+                                <li>Corporate Wellness Retreat</li>
+                                <li>Kids Retreat</li>
+                                <li>Private Luxurious wellness Retreat</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                            <span>Who can join the retreat?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" aria-hidden="true">
+                            <p>Anyone seeking rest, clarity, healing, or transformation is welcome. Our retreats are suitable for:</p>
+                            <ul>
+                                <li>Beginners</li>
+                                <li>Experienced practitioners</li>
+                                <li>Families</li>
+                                <li>Couples</li>
+                                <li>Corporate teams</li>
+                                <li>Individuals</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                            <span>What is included in the retreat package?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" aria-hidden="true">
+                            <p>Most of our retreats include:</p>
+                            <ul>
+                                <li>Accommodation</li>
+                                <li>All meals (satvik, wholesome, farm-fresh)</li>
+                                <li>Daily yoga/meditation sessions</li>
+                                <li>Nature walks &amp; mindful activities</li>
+                                <li>Workshops or breathwork sessions</li>
+                                <li>Wellness consultations</li>
+                                <li>Access to all retreat spaces</li>
+                            </ul>
+                            <p>Specific inclusions may vary according to the retreat type.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                            <span>Do I need prior experience in yoga or meditation?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" aria-hidden="true">
+                            <p>Not at all! Our retreats are thoughtfully designed for beginners as well as experienced practitioners. You will be guided gently in all practices.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
+                            <span>How do I book a retreat?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6" aria-hidden="true">
+                            <p>You can book directly via:</p>
+                            <ul>
+                                <li>Our website booking form</li>
+                                <li>WhatsApp or phone support</li>
+                                <li>Instagram DM</li>
+                            </ul>
+                            <p>Once your dates are confirmed, our team will assist you with travel details and preparations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-cta">
+                    <a href="faq.html" class="btn btn-outline">View All FAQs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <h2 class="section-title">Subscribe to our newsletter</h2>
+                <p class="newsletter-description">Get the latest deals and product updates</p>
+                <form class="newsletter-form" id="newsletter-form" novalidate>
+                    <label for="newsletter-email" class="sr-only">Email address</label>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" class="newsletter-input" required aria-required="true" aria-describedby="newsletter-error">
+                    <span id="newsletter-error" class="error-message" role="alert" aria-live="polite"></span>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="Kalyāna Wellness Retreat Logo">
+                        <span>Kalyāna Wellness Retreat</span>
+                    </a>
+                    <p>A nature-led wellness sanctuary where you are invited to slow down, breathe deeply, and reconnect with your inner stillness.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">About Kalyāna</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html#why-kalyana">Why Kalyāna</a></li>
+                        <li><a href="about.html#story">The Heart Behind Kalyāna</a></li>
+                        <li><a href="contact.html">Reach Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick links</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="retreats.html">Retreats</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Got Question?</h4>
+                    <a href="mailto:contact@kalyanawellnessretreat.com" class="footer-link">contact@kalyanawellnessretreat.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+                    <a href="https://www.instagram.com/kalyanawellnessretreat?igsh=NWtkYmJhYzA3YWts" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">Instagram</a>
+                    <a href="#" aria-label="YouTube" class="social-link">YouTube</a>
+                    <a href="#" aria-label="TikTok" class="social-link">TikTok</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025, Kalyāna Wellness Retreat Powered by Port24 Technologies Inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Discovery Call Modal -->
+    <div class="modal" id="discovery-modal">
+        <div class="modal-content discovery-modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="discovery-modal-header">
+                <div class="discovery-icon">✨</div>
+                <h2 class="discovery-title">Ready to Make Your Life More Alive?</h2>
+                <p class="discovery-subtitle">Let's explore how our retreats can transform your journey</p>
+            </div>
+            <div class="discovery-modal-body">
+                <form class="discovery-form" id="discovery-form" novalidate>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-required="true" aria-describedby="email-error" aria-invalid="false">
+                        <span class="error-message" id="email-error" role="alert" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-discovery">Schedule Discovery Call</button>
+                    <p class="discovery-note">We'll contact you within 24 hours</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <div class="toast-icon">✓</div>
+            <div class="toast-message" id="toast-message"></div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close gallery viewer">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+            <div class="lightbox-image" id="lightbox-image" role="img" aria-label="Gallery image"></div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 339.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56 81.2 56 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
