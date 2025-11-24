@@ -240,6 +240,10 @@ body {
     color: var(--primary-color);
 }
 
+.mobile-nav-brand {
+    display: none;
+}
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -1836,7 +1840,7 @@ select:focus-visible {
         background: var(--bg-white);
         flex-direction: column;
         align-items: flex-start;
-        padding: 100px 40px 40px;
+        padding: 0;
         box-shadow: var(--shadow-xl);
         transition: left var(--transition-base);
         z-index: 999;
@@ -1844,20 +1848,59 @@ select:focus-visible {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         margin: 0;
+        overflow-y: auto;
     }
 
     .nav-menu.active {
         left: 0;
     }
 
-    .nav-menu li {
+    .mobile-nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 24px 40px;
+        border-bottom: 1px solid var(--border-color);
         width: 100%;
+        background: var(--bg-white);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .mobile-nav-brand .logo {
+        font-family: var(--font-serif);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primary-color);
+        text-decoration: none;
+        letter-spacing: -0.02em;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mobile-nav-brand .logo img {
+        height: 32px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .mobile-nav-brand .logo span {
+        font-size: 18px;
+    }
+
+    .nav-menu > li {
+        width: 100%;
+    }
+
+    .nav-menu > li:not(.mobile-nav-brand) {
         border-bottom: 1px solid var(--border-color);
     }
 
     .nav-link {
         display: block;
-        padding: 15px 0;
+        padding: 15px 40px;
         width: 100%;
     }
 
@@ -1873,7 +1916,7 @@ select:focus-visible {
     }
 
     .dropdown-menu a {
-        padding: 12px 20px;
+        padding: 12px 40px 12px 60px;
     }
 
     .mobile-menu-toggle {
@@ -2015,8 +2058,8 @@ select:focus-visible {
         gap: 16px;
     }
     
-    /* Hide gallery items beyond the first 3 on mobile */
-    .gallery-item:nth-child(n+4) {
+    /* Show only 3 images on mobile for home page gallery */
+    .home-gallery .gallery-item:nth-child(n+4) {
         display: none;
     }
     

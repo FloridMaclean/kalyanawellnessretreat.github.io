@@ -18,15 +18,30 @@ if (mobileMenuToggle && navMenu) {
         }
     });
 
-    // Close menu when clicking on a link
+    // Close menu when clicking on any navigation link (including dropdown submenu items)
+    const closeMobileMenu = () => {
+        navMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    // Close menu when clicking on main nav links
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            mobileMenuToggle.classList.remove('active');
-            mobileMenuToggle.setAttribute('aria-expanded', 'false');
-        });
+        link.addEventListener('click', closeMobileMenu);
     });
+
+    // Close menu when clicking on dropdown submenu links
+    const dropdownLinks = document.querySelectorAll('.dropdown-menu a');
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close menu when clicking on mobile nav brand logo
+    const mobileNavBrand = document.querySelector('.mobile-nav-brand .logo');
+    if (mobileNavBrand) {
+        mobileNavBrand.addEventListener('click', closeMobileMenu);
+    }
 }
 
 // Newsletter Form
